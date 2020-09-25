@@ -258,10 +258,13 @@ nav {
   font-weight: bold;
   color: $theme;
   font-size: 16px;
+  margin-bottom: 6px;
+  letter-spacing: 0.04em;
+
   }
   .tags {
     display: inline-block;
-    margin: 3px 3px 3px 0;
+    margin: 12px 3px 3px 0;
     font-family: 'Inconsolata', monospace;
     font-size: 0.75rem;
     font-weight: 700;
