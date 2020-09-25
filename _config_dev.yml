@@ -1,0 +1,52 @@
+# Site settings
+name: Joanna Yoo
+title: Joanna Yoo
+description:
+url: https://joannayoo0117.github.io/
+baseurl: ''
+email: hi@joannayoo.dev
+logo: https://joannayoo0117.github.io/images/logo.png
+resume: https://joannayoo0117.github.io/resume.pdf
+social:
+  - title: email
+    url: mailto:hi@joannayoo.dev
+    name: hi@joannayoo.dev
+  - title: twitter
+    url: https://twitter.com/_joanna_yoo
+    name: _joanna_yoo
+  - title: github
+    url: https://github.com/joannayoo0117
+    name: joannayoo0117
+  - title: linkedin
+    url: https://www.linkedin.com/in/joannayoo
+    name: joannayoo
+
+blog_name: Joanna Yoo's Blog
+blog_description: ml, engineering and random stuff 👀
+# Build settings
+markdown: kramdown
+
+permalink: /:title.html
+theme_config:
+  back_home_text: "home 🏠" # customize text for homepage link in post layout
+  date_format: "%Y-%m-%d" # customize how date is formatted
+  show_description: true # show blog description in home page
+
+exclude:
+  - 'Gemfile'
+  - 'Gemfile.lock'
+  - '*.gemspec'
+  - 'README.md'
+  - 'node_modules'
+  - 'build'
+  - 'gulpfile.js'
+  - 'package.json'
+
+keep_files:
+  - 'CNAME'
+  - '.git'
+  - '.gitignore'
+
+plugins_dir:
+  - jekyll-minifier
+  - jekyll-sitemap
