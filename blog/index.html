@@ -4,7 +4,7 @@ layout: blog
 
 
 <div class='posts'>
-    {% assign posts_by_categories = site.posts | group_by: 'category' |sort: "name" | reverse %}
+    {% assign posts_by_categories = site.posts | group_by: 'category' |sort: "name"  %}
     {% for group in posts_by_categories %}
     <article class="category"># {{group.name}}</article>
     {% for post in group.items %}
