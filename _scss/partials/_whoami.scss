@@ -1,0 +1,16 @@
+.whoami{
+  &__resume {
+    .highlight-link {
+      @include transition;
+      font-weight: 400;
+      text-decoration: none;
+      display: inline-block;
+      padding: 2px 3px;
+      box-shadow: inset 0 -3px 0 $yellow;
+      &:hover {
+        box-shadow: inset 0 -33px 0 0 $yellow;
+        color: $white;
+      }
+    }
+  }
+}

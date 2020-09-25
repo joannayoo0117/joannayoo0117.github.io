@@ -1,0 +1,19 @@
+<section class="section papers" id="papers">
+  <div class="section__title">papers</div>
+  <div class="section__content">
+    <div class="papers">
+      {% for paper in site.data.publication %}
+      <div class="paper">
+        <div class="time-place">
+          <div class="paper__name">
+            <a href="{{paper.url}}" target="_blank">{{paper.name}}</a>
+          </div>
+          <div class="paper__time">{{paper.time}}</div>
+        </div>
+        <div class="paper__authors">{{paper.authors}}</div>
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>

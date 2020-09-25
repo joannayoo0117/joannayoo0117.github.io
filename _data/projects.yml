@@ -1,0 +1,7 @@
+- name: GAGAN
+  url: https://github.com/joannayoo0117/GAGAN
+  code: https://github.com/joannayoo0117/GAGAN
+  description: Unofficial implementation of drug-target interaction prediction with graph neural network
+  used:
+    - thing: pytorch
+

@@ -1,0 +1,318 @@
+
+
+// @import "reset";
+@import "partials/globals";
+// Syntax highlighting @import is at the bottom of this file
+
+/**************/
+/* BASE RULES */
+/**************/
+
+html {
+  font-size: 100%;
+}
+
+body {
+	background: $night;
+  font: 14px/1.4 $font-stack;
+  color: $white;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 740px;
+  padding: 0 10px;
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-stack;
+  color: $white;
+  font-weight: bold;
+
+  line-height: 1.7;
+  margin: 1em 0 15px;
+  padding: 0;
+
+  @include mobile {
+    line-height: 1.4;
+  }
+}
+
+h1 {
+  font-size: 24px;
+  a {
+    color: inherit;
+  }
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+  color: $overcast;
+}
+
+p {
+  margin: 14px 0;
+}
+
+a {
+  color: $accent;
+  text-decoration: none;
+	cursor: pointer;
+  &:hover, &:active {
+    color: $accent;
+  }
+}
+
+ul, ol {
+  margin: 15px 0;
+  padding-left: 30px;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+ol ul, ul ol, ul ul, ol ol {
+  margin: 0;
+}
+
+ul ul, ol ul {
+  list-style-type: circle;
+}
+
+em, i {
+  font-style: italic;
+}
+
+strong, b {
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+}
+
+// Fixes images in popup boxes from Google Translate
+.gmnoprint img {
+  max-width: none;
+}
+
+.date {
+  font-style: italic;
+  color: $grey;
+}
+
+// Specify the color of the selection
+::-moz-selection {
+  color: $black;
+  background: $off-white;
+}
+::selection {
+  color: $black;
+  background: $off-white;
+}
+
+// Nicolas Gallagher's micro clearfix hack
+// http://nicolasgallagher.com/micro-clearfix-hack/
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*********************/
+/* LAYOUT / SECTIONS */
+/*********************/
+
+//
+// .masthead
+//
+
+.wrapper-masthead {
+  margin-bottom: 50px;
+}
+
+.masthead {
+  padding: 20px 0;
+  // border-bottom: 1px solid $off-white;
+
+  @include mobile {
+    text-align: center;
+  }
+}
+
+.site-avatar {
+  float: left;
+  width: 70px;
+  height: 70px;
+  margin-right: 15px;
+
+  @include mobile {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+  img {
+    border-radius: 5px;
+  }
+}
+
+.site-info {
+  float: left;
+
+  @include mobile {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.site-name {
+  margin: 0;
+  color: $theme;
+  cursor: pointer;
+  font-family: $font-stack;
+  font-weight: 300;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+.site-description {
+  margin: -5px 0 0 0;
+  color: $off-white;
+  font-size: 15px;
+  letter-spacing: 1px;
+  @include mobile {
+    margin: 3px 0;
+  }
+}
+
+nav {
+  float: right;
+  margin-top: 23px; // @TODO: Vertically middle align
+  font-family: $font-stack;
+  font-size: 15px;
+
+  @include mobile {
+    float: none;
+    margin-top: 9px;
+    display: block;
+    font-size: 16px;
+  }
+
+  a {
+    margin-left: 20px;
+    color: $off-white;
+    text-align: right;
+    font-weight: 300;
+    letter-spacing: 1px;
+
+    @include mobile {
+      margin: 0 10px;
+      color: $blue;
+    }
+  }
+}
+
+//
+// .main
+//
+
+
+
+.posts > .category{
+  font-size: 18px;
+  line-height: 1.7;
+  letter-spacing: 1px;
+  margin: 1em 0 10px;
+  padding: 0;
+  color: $white;
+
+}
+.posts > .post {
+  margin-left: 20px;
+  padding-bottom: 2em;
+  @include mobile {
+    margin-left: 10px;
+  }
+  a.blog_title {
+  color: $off-white;
+  font-weight: bold;
+  color: $theme;
+  font-size: 16px;
+  }
+  .tags {
+    display: inline-block;
+    margin: 3px 3px 3px 0;
+    font-family: 'Inconsolata', monospace;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 3px;
+    color: $cool-grey;
+    border: 1px solid $cool-grey;
+    background: transparent;
+    &:first-of-type {
+      margin-left: 0;
+    }
+  }
+
+}
+
+
+
+.posts > .post:last-child {
+  padding-bottom: 1em;
+  border-bottom: none;
+}
+
+.post {
+  blockquote {
+    // margin: 1.8em .8em;
+    // border-left: 2px solid $grey;
+    // padding: 0.1em 1em;
+    color: $grey;
+    font-size: 14px;
+    font-style: italic;
+  }
+
+  .comments {
+    margin-top: 10px;
+  }
+
+
+}
+
+.wrapper-footer {
+  margin-top: 50px;
+  border-top: 1px solid $night;
+  border-bottom: 1px  solid $night;
+  background-color: $night;
+}
+
+footer {
+  padding: 20px 0;
+  text-align: center;
+}
+
+// Settled on moving the import of syntax highlighting to the bottom of the CSS
+// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
+@import "partials/highlights";

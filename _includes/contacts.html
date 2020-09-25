@@ -1,0 +1,11 @@
+<section class="section background" id="contacts">
+  <div class="section__title">say hi</div>
+  <div class="section__content">
+    {% for link in site.social %}
+    <a href="{{link.url}}" target="_blank" title="{{link.title}}" class="underline-link">
+      {{link.title}}: {{link.name}}
+    </a>
+    {% endfor %}
+    </p>
+  </div>
+</section>

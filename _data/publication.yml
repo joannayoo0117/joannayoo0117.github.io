@@ -1,0 +1,4 @@
+- name: SliceOut - Training Transformers and CNNs faster while using less memory
+  url: https://arxiv.org/abs/2007.10909/
+  time: 2020/07
+  authors: Pascal Notin, Aidan N. Gomez, Joanna Yoo, Yarin Gal

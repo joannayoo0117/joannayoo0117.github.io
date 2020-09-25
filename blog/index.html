@@ -1,0 +1,26 @@
+---
+layout: blog
+---
+
+
+<div class='posts'>
+    {% assign posts_by_categories = site.posts | group_by: 'category' |sort: "name" | reverse %}
+    {% for group in posts_by_categories %}
+    <article class="category"># {{group.name}}</article>
+    {% for post in group.items %}
+    <article class="post">
+        <a href="{{ site.baseurl }}{{ post.url }}" class="blog_title">
+            {{ post.title }}
+        </a>
+
+        <div class="entry">
+            {{ post.date | date: "%Y-%m-%d" }} <i>{{ post.description }}</i>
+        </div>
+        {% for tag in post.tags %}
+        <span class="tags">{{tag.name}}</span>
+        {% endfor %}
+
+    </article>
+    {% endfor %}
+    {% endfor %}
+</div>

@@ -1,0 +1,8 @@
+languages:
+  - item: python
+  - item: r
+  - item: c++
+
+frameworks:
+  - item: tensorflow
+  - item: pytorch

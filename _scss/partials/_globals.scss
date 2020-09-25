@@ -1,0 +1,107 @@
+// Colors
+$night: #1f1c21;
+$black: #36363c;
+$dark-grey: #484445;
+$grey: #777777;
+$blue: #1A84AD;
+$slate: #D5D5D5;
+$off-white: #EBEEE9;
+$white: #ffffff;
+$green: #748c61;
+$purple: #64485C;
+$red: #B13D24;
+$orange: #D4963D;
+$yellow: #EEC763; // F4D06F
+$accent: #EACE32;
+$lavender: #6D7993;
+$cool-grey: #8D94BA;
+$rose: #AC8586;
+$light-green: #C1D28A;
+$light-blue: #76c1ca;
+$marine: #57BC90;
+$paper: #D5D5D5;
+$overcast: #9099A2;
+$dry: #E5D0CC;
+$sky: #C3BFBD;
+$pink: #D8B0A9;
+
+$background: $night;
+$theme: $dry;
+// Fonts
+
+@import url('https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+$font-stack: 'B612', sans-serif;
+$helvetica: Helvetica, Arial, sans-serif;
+$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$georgia: Georgia, serif;
+$korean:  didot, 'Apple SD Gothic Neo', 'NanumBarunGothic', '맑은 고딕', 'Malgun Gothic', '굴림', 'Gulim', '돋움', 'Dotum', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+
+// Media queries
+$fifteen-inch: 1440px;
+$thirteen-inch: 1280px;
+$desktop-width: 1024px;
+$little-desktop: 850px;
+$tablet-width: 768px;
+$weird-not-tablet-width: 630px;
+$phablet-width: 550px;
+$mobile-width: 480px;
+$small-mobile-width: 360px;
+$tiny-mobile-width: 330px;
+
+@mixin transition {
+  transition: all 0.2s ease-in-out;
+}
+
+@mixin thirteen {
+  @media screen and (max-width: #{$thirteen-inch}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (max-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin little-desktop {
+  @media screen and (max-width: #{$little-desktop}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin weird-medium {
+  @media screen and (max-width: #{$weird-not-tablet-width}) {
+    @content;
+  }
+}
+
+@mixin phablet {
+  @media screen and (max-width: #{$phablet-width}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
+@mixin small-mobile {
+  @media screen and (max-width: #{$small-mobile-width}) {
+    @content;
+  }
+}
+
+@mixin tiny-mobile {
+  @media screen and (max-width: #{$tiny-mobile-width}) {
+    @content;
+  }
+}
